@@ -1,0 +1,10 @@
+1.) Do zapisywania algorytmów iteracyjnych użwamy instrukcji while i do...while.
+2.) Instrukcja while w języku c++ działa poprzez wykonywanie instrukcji wewnątrz klamr {} do momentu aż równanie logiczne w nawiasie () będzie fałszywe. 
+Przykładowy program:
+int a = 1;
+while(a == 1)
+{
+    a++;
+}
+3.) Tak instrukcje wewnątrz pętli while zostaną wykonane tylko i wyłącznie jeśli warunek jest prawdziwy, ponieważ jest to podstawowa zasada działania pętli while.
+4.) Instrukcja while różni się do ... while jedną podstawową różnicą, instrukcja do while gwarantuje wykonanie instrukcji wewnątrz pętli przynajmniej jeden raz, nawet jeśli warunek pętli nie jest prawdziwy.
