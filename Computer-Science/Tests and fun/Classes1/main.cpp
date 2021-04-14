@@ -21,17 +21,54 @@ public:          // Access specifier, accesible from outside
     }
 };
 
+class Animal
+{
+public:
+    void animalSound()
+    {
+        cout << "The animal makes a sound \n";
+    }
+};
+
+// Derived class
+class Pig : public Animal
+{
+public:
+    void animalSound()
+    {
+        cout << "The pig says: You have the right to remain silent! \n";
+    }
+};
+
+// Derived class
+class Dog : public Animal
+{
+public:
+    void animalSound()
+    {
+        cout << "The dog says: OWA OWA \n";
+    }
+};
+
+
+
 int main()
 {
-    MyClass myObj; // Create an object of MyClass
+    Animal cow;
+    Dog Charlie;
+    Pig Peppa;
 
-    // Access attributes and set values
-    myObj.myNum = 15;
-    myObj.setPrivNum(100);
+    cow.animalSound();
+    Charlie.animalSound();
+    Peppa.animalSound();
 
 
-    // Print attribute values
-    cout<<myObj.myNum << "\n";
-    cout<<myObj.getPrivNum();
-    return 0;
+    //MyClass myObj; // Create an object of MyClass
+    //// Access attributes and set values
+    //myObj.myNum = 15;
+    //myObj.setPrivNum(100);
+    //// Print attribute values
+    //cout<<myObj.myNum << "\n";
+    //cout<<myObj.getPrivNum();
+    //return 0;
 }
